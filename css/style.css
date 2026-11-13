@@ -417,3 +417,106 @@ section{scroll-margin-top:96px}
   .slot img{animation:none}
   .slot img:nth-child(1){opacity:1}
 }
+
+/* ---------- mobile H5 layout (phones ≤640px) ----------
+   Compact, card-like reading on phones: hero image visible on the
+   first screen, each section about one to two screens tall.
+   Desktop and tablet styles above are unchanged. */
+@media (max-width:640px){
+  section{scroll-margin-top:64px}
+  .header-inner{padding:14px var(--pad)}
+  .brand-bean{width:34px;height:31px}
+  .brand-name{font-size:21px}
+  .nav-toggle span{width:24px;margin:5px 0}
+  .eyebrow{font-size:12px;letter-spacing:.24em}
+  .eyebrow-cream{font-size:12px}
+  .btn-outline{font-size:15px;padding:10px 22px}
+  .btn-lg{font-size:15px;padding:11px 26px}
+
+  /* hero */
+  .hero-inner{padding:84px var(--pad) 28px}
+  .hero .eyebrow{font-size:10px;letter-spacing:.14em}
+  .hero h1{margin-top:14px;font-size:44px;line-height:48px}
+  .hero-sub{margin-top:14px;font-size:16px}
+  .hero-cta-row{margin-top:20px}
+  .collage{height:300px;margin-top:28px}
+  .slot-arch{left:0;top:0;width:44%;height:250px;border-radius:120px 120px 0 0}
+  .slot-bean{left:52%;top:6px;width:46%;height:170px}
+  .slot-fan{left:49%;top:176px;width:51%;height:118px}
+  .deco-outline{right:0;top:-26px;height:54px}
+  .deco-red{left:40%;top:200px;height:30px}
+  .deco-x{display:none}
+
+  /* what we do */
+  .statement{padding:40px 22px 44px}
+  .statement-lines{margin-top:22px;font-size:25px;line-height:35px}
+  .statement-sub{margin-top:18px;font-size:15px}
+
+  /* why us */
+  .strengths{padding:40px 0 44px}
+  .section-title{margin-top:12px;font-size:25px}
+  .strength-grid{margin-top:26px;row-gap:26px}
+  .strength-num{font-size:16px}
+  .strength h3{margin-top:4px;font-size:19px}
+  .strength p:last-child{margin-top:6px;font-size:15px;line-height:23px}
+
+  /* stats — three across, like a card strip */
+  .stats{padding:36px 16px 32px}
+  .stats-row{flex-direction:row;gap:0;margin-top:22px}
+  .stat{padding:0 6px}
+  .stat + .stat{border-top:none;padding-top:0;border-left:1px solid var(--deepred-line)}
+  .stat-num{font-size:30px}
+  .stat-label{margin-top:8px;font-size:9px;letter-spacing:.06em;line-height:1.4}
+  .stats-foot{margin-top:22px;font-size:11px;letter-spacing:.04em}
+
+  /* work */
+  .work{padding-top:40px}
+  .work-title{margin-top:12px;font-size:28px}
+  .work-sub{margin-top:12px;font-size:15px}
+  .case-bands{margin-top:26px}
+  .case-band{height:132px;padding:0 22px 20px}
+  .case-bean{width:190px;right:-24px;top:-18px}
+  .case-desc{margin-bottom:4px;font-size:13px}
+  .case-name{font-size:23px}
+
+  /* partners */
+  .partners{padding:34px 0 40px}
+  .logo-wall{margin-top:20px;column-gap:20px;row-gap:12px}
+  .logo-wall li{font-size:19px}
+  .logo-wall li.small{font-size:16px}
+
+  /* team */
+  .team{padding:40px 0 44px}
+  .team-watermark{width:340px;right:-150px;top:180px}
+  .team-title{margin-top:12px;font-size:27px;line-height:34px}
+  .team-list{margin-top:20px}
+  .member{gap:16px;padding:18px 0}
+  .member + .member{border-top-width:1px}
+  .photo-slot{flex-basis:64px;width:64px;height:64px}
+  .member-text h3{font-size:19px}
+  .member-role{margin-top:4px;font-size:13px}
+  .member-bio{margin-top:6px;font-size:14px;line-height:21px}
+
+  /* contact */
+  .contact{padding:40px 0 48px}
+  .contact-title{margin-top:12px;font-size:30px;line-height:36px}
+  .contact-sub{margin-top:12px;font-size:15px}
+  .contact-grid{margin-top:24px;row-gap:34px}
+  .field{margin-bottom:18px}
+  .field span{font-size:14px}
+  .field input{font-size:16px;padding-bottom:6px}
+  .btn-send{width:100%;min-width:0;margin-top:6px}
+  .form-note{font-size:13px}
+  .direct-label{font-size:13px}
+  .direct-email{margin-top:8px;font-size:16px}
+  .qr-row{margin-top:20px}
+  .qr-box{flex-basis:88px;width:88px;height:88px;border-width:2px}
+  .direct-city{margin-top:20px;font-size:15px}
+
+  /* footer */
+  .site-footer{height:190px}
+  .footer-word{font-size:64px;left:20px;top:26px}
+  .footer-note{left:20px;right:20px;bottom:26px;top:auto;gap:10px}
+  .footer-bean{flex-basis:28px;width:28px;height:26px}
+  .footer-note p{font-size:11px;line-height:17px}
+}
